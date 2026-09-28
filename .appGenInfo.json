@@ -1,0 +1,32 @@
+{
+  "generationParameters": {
+    "generationDate": "Thu Apr 09 2026 04:59:44 GMT+0000 (Coordinated Universal Time)",
+    "generatorPlatform": "SAP Business Application Studio",
+    "serviceType": "SAP System (ABAP On-Premise)",
+    "metadataFilename": "",
+    "serviceUrl": "http://vhresds4ci.sap.shreecement.com:44300/sap/opu/odata/sap/ZUI_PS_APPROPRIATIONREQ_02",
+    "appName": "ps_ui_approvalflow",
+    "appTitle": "Appropriation Request Flow",
+    "appDescription": "Appropriation Request Flow",
+    "appNamespace": "com.ps.ui",
+    "ui5Theme": "sap_horizon",
+    "ui5Version": "1.108.39",
+    "enableEslint": true,
+    "enableTypeScript": false,
+    "showMockDataInfo": true,
+    "generatorVersion": "1.22.0",
+    "template": "List Report Page V2",
+    "generatorName": "SAP Fiori Application Generator",
+    "entityRelatedConfig": [
+      {
+        "type": "Main Entity",
+        "value": "ARApprovalTask"
+      },
+      {
+        "type": "Navigation Entity",
+        "value": "None"
+      }
+    ],
+    "launchText": "To launch the generated application, run the following from the generated application root folder:\n\n```\n    npm start\n```"
+  }
+}

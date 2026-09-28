@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
+
+specVersion: "4.0"
+metadata:
+  name: com.ps.ui.psuiapprovalflow
+type: application
+builder:
+  resources:
+    excludes:
+      - /test/**
+      - /localService/**
+  customTasks:
+    - name: deploy-to-abap
+      afterTask: generateCachebusterInfo
+      configuration:
+        target:
+          destination: btp-fiori-dev-200
+          url: http://vhresds4ci.sap.shreecement.com:44300
+          client: '200'
+        app:
+          name: ZPS_CAPARFLOW
+          description: AR Approval Flow
+          package: zps_capex
+          transport: DS4K948086
+        exclude:
+          - /test/
